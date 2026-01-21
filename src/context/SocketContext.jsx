@@ -18,7 +18,7 @@ export const SocketProvider = ({ children }) => {
 
   useEffect(() => {
     if (token) {
-      const newSocket = io('http://localhost:4000', {
+      const newSocket = io('http://chat.tarikatasoy.com/api', {
         auth: {
           token: token,
         },

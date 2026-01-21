@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-  baseURL: 'http://localhost:4000/api', // Backend adresiniz
+  baseURL: 'https://chat.tarikatasoy.com/api', 
 });
 
 apiClient.interceptors.request.use((config) => {
