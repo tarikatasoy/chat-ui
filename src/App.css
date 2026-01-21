@@ -1,0 +1,35 @@
+/*
+ * Bu dosyadan @import "tailwindcss" ve diğer global tanımlamaları kaldırın,
+ * çünkü onlar zaten index.css dosyasında bir kere yüklendi.
+*/
+
+/* Logo ve Kart gibi bileşenlere özel stiller burada kalabilir */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Bu kural logo-spin animasyonunu kullanıyor, o da index.css'e taşındı */
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
